@@ -1,0 +1,19 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 16px / 1.4 $text-font-stack;
+}
+
+
+h2 {
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: $dark-grey;
+	font-size: 1.4rem;
+	margin-bottom: 3rem;
+}
