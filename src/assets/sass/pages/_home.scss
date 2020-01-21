@@ -83,7 +83,8 @@
 		animation: 2s cta-jumping ease-in-out;
 		animation-fill-mode: forwards;
 		animation-iteration-count: infinite;
-		display: none;
+		opacity: 1;
+		
 		&:hover {
 			p {
 				color: #FFF;
@@ -111,49 +112,6 @@
 	}
 }
 
-#projects {
-	padding: 4em 0;
-	display: none;
-	.projects {
-		width: 100%;
-		float: left;
-		display: inline-flex;
-		-webkit-flex-wrap: wrap;
-		    -ms-flex-wrap: wrap;
-		        flex-wrap: wrap;
-		.project {
-			margin-bottom: $global-margin;
-			width: 50%;
-			height: 200px;
-			position: relative;
-			padding-right: $global-margin;
-			overflow: hidden;
-			display: flex;
-			&:nth-child(even) {
-				padding-right: 0;
-			}
-			.image {
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				img {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					-webkit-transform: translate(-50%, -50%);
-					   -moz-transform: translate(-50%, -50%);
-					    -ms-transform: translate(-50%, -50%);
-					     -o-transform: translate(-50%, -50%);
-					        transform: translate(-50%, -50%);
-					max-width: calc(100% + 4px);
-				}
-				
-			}
-		}
-	}
-}
 
 @keyframes cta-jumping {
 	0 {
